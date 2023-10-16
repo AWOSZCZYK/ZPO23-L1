@@ -28,8 +28,10 @@ public class Ex6 {
             dopuszczalnyDzien = 30;
         }
 
-        if (miesiac == 2) {
+        if (rok %4 == 0 && miesiac == 2) {
             dopuszczalnyDzien = 29;
+        }if (rok %4 != 0 && miesiac == 2) {
+            dopuszczalnyDzien = 28; // uwzględnienie roku przestępnego 
         } else {
             dopuszczalnyDzien = 31;
         }
