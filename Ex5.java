@@ -25,8 +25,8 @@ public class Ex5 {
         if ((drugiPunktX == pierwszyPunktX) && (drugiPunktY == pierwszyPunktY)){
             throw new IllegalArgumentException("Współrzędne punktów nie mogą być takie same.");
         }
-        double a = (drugiPunktY - pierwszyPunktY) / (drugiPunktX - pierwszyPunktX);
-        double b = pierwszyPunktY - (a * pierwszyPunktX);
+        double a = (pierwszyPunktY - drugiPunktY) / (pierwszyPunktX - drugiPunktX); // zamiana (yB - yA)/(xB - xA) na (yA - yB)/(xA - xB)
+        double b = pierwszyPunktY - (a * drugiPunktX); // pierwszyPunktX -> drugiPunktX
         return new double[]{a, b};
     }
 }
