@@ -7,8 +7,9 @@ public class Ex2 {
         System.out.print("Podaj łańcuch referencyjny: ");
         String reference = scanner.nextLine().toLowerCase();
 
-        int wrong = 0;
+        
         while (true) {
+            int wrong = 0; // wprowadzenie wrong do pętli, aby ilość niewłaciwych znaków w ciągu resetowała się przy każdym ponownym uruchomieniu pętli
             System.out.print("Podaj łańcuch do porównania: ");
             String compare = scanner.nextLine().toLowerCase();
 
