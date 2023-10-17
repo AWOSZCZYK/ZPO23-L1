@@ -15,7 +15,7 @@ public class Ex3 {
 
         int r = Integer.parseInt(s1, 16);
         int g = Integer.parseInt(s2, 16);
-        int b = Integer.parseInt(s3, 16); // zamiana s2 na s3
+        int b = Integer.parseInt(s3, 16); // zamiana s2 (zielony) na s3 (niebieski)
         System.out.printf("(" + r + "," + b + "," + g + ")");
 
     }
